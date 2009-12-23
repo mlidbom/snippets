@@ -1,0 +1,10 @@
+<TemplatesExport>
+  <Template uid="e777ce07-04d4-4a94-b370-f597a08d7687" shortcut="summary" description="summary" text="///&lt;summary&gt;$END$&lt;/summary&gt;" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+</TemplatesExport>
