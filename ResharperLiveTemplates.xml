@@ -7,4 +7,38 @@
     <Variables />
     <CustomProperties />
   </Template>
+  <Template uid="da84000d-1eb4-4ec6-b886-4898f2866f5f" shortcut="nunittest" description="Nunit test method" text="        [NUnit.Framework.TestAttribute]&#xD;&#xA;        public void $TestName$()&#xD;&#xA;        {&#xD;&#xA;            $END$&#xD;&#xA;        }" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="TestName" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="31f44d8f-7a07-46e8-b6c7-7c3fa897d3de" shortcut="nunitparameterisedtest" description="" text="        [NUnit.Framework.TestAttribute, $DATA_SOURCE_ATTRIBUTE$]&#xD;&#xA;        public void $TestName$($PARAMETER_TYPE$ $me$)&#xD;&#xA;        {&#xD;&#xA;            $END$&#xD;&#xA;        }" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="DATA_SOURCE_ATTRIBUTE" expression="completeSmart()" initialRange="0" />
+      <Variable name="TestName" expression="" initialRange="0" />
+      <Variable name="PARAMETER_TYPE" expression="" initialRange="0" />
+      <Variable name="me" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="0c55aac5-d12c-4b7a-8e9d-1f0614e71f34" shortcut="constraint" description="" text="        public static Constraint $RELATIONSHIP$(this ConstraintExpression me, $TReference$ reference)&#xD;&#xA;        {&#xD;&#xA;            return me.AppendRelationship(&quot;$RELATIONSHIP$&quot;, reference, examined =&gt; $END$);&#xD;&#xA;        }" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="TypeMember" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="RELATIONSHIP" expression="" initialRange="0" />
+      <Variable name="TReference" expression="completeSmart()" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
 </TemplatesExport>
