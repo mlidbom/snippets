@@ -41,4 +41,15 @@
     </Variables>
     <CustomProperties />
   </Template>
+  <Template uid="db9ef180-a8ce-4b34-83d1-12468df6d63b" shortcut="extensionmethod_generic" description="" text="        public static $RETURN_TYPE$ $NAME$&lt;T&gt;(this T actual)&#xD;&#xA;        {&#xD;&#xA;            return $END$;&#xD;&#xA;        }" reformat="True" shortenQualifiedReferences="True">
+    <Context>
+      <CSharpContext context="Everywhere" minimumLanguageVersion="2.0" />
+    </Context>
+    <Categories />
+    <Variables>
+      <Variable name="RETURN_TYPE" expression="" initialRange="0" />
+      <Variable name="NAME" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
 </TemplatesExport>
